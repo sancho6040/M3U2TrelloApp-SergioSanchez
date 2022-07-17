@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    max-height: 100vh;
+}
+
+/*-------------------------------- header -------------------------*/
+
+header {
+    background-color: #7CCEFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+
+.logo-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.add-button{
+    align-self: center;
+}
+
+.add-button:hover{
+    background-color: rgba(0, 0, 0, 0.232);
+}
+
+header img {
+    height: 40px;
+    align-self: center;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+/*-------------------------------- main -------------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+
+    margin: 1vw;
+    height: 85vh;
+}
+
+.tablero {
+    background: #BDE6FF;
+    /* background: rgb(196, 196, 196);
+    background: radial-gradient(circle, rgba(196,196,196,1) 0%, rgba(249,249,249,1) 100%); */
+    border-radius: 10px;
+    border: 3px solid #73CAFF;
+    padding: 0.5vw 1vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tablero h1 {
+    margin: 0 0 1vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-rows: repeat(3, 1fr) !important;
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 15px;
+    }
+}
+
+.task {
+    background: white;
+    border-radius: 10px;
+    border: 2px solid rgb(108, 108, 108);
+    padding: 0.5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task * {
+    margin: 0;
+}
+
+.task-color {
+    height: 5px;
+    background-color: rgb(0, 153, 255);
+}
+
+.p-descripcion {
+    text-align: justify;
+}
+
+/* working on
+.grip-vertical {
+    position: relative;
+    left: -50px;
+}
+*/
+/*---------------------------specific tasks-----------------------*/
+
+.to-do {
+    background: #81cdff;
+}
+
+.working-on {
+    background: #f7d6e0;
+}
+
+.done {
+    background: #b2f7ef;
+}
+
+/*------------------------------------modal---------------------------------*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
