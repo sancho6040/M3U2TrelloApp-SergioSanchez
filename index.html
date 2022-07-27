@@ -29,51 +29,68 @@
     </header>
 
     <main>
-        <div class="tablero">
+        <section class="tablero">
             <h1>To do 🎯</h1>
-            <div class="task to-do">
-                <div class="task-color"></div>
-                <h2>title</h2>
-                <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
-                    quae?</p>
-                <p>@sergio_Sanchez</p>
-                <p class="p-hora">10:10</p>
+            <div class="container-tasks">
+
+                <article class="task to-do">
+                    <div class="task-color"></div>
+                    <h2>title</h2>
+                    <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Velit,
+                        quae?</p>
+                    <p>@sergio_Sanchez</p>
+                    <p class="p-hora">10:10</p>
+                </article>
+
             </div>
-        </div>
-        <div class="tablero">
+        </section>
+        <section class="tablero">
             <h1>Working on 🧰</h1>
-            <div class="task working-on">
-                <div class="task-color"></div>
-                <h2>title</h2>
-                <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
-                    quae?</p>
-                <p>@sergio_Sanchez</p>
-                <p class="p-hora">10:10</p>
-            </div>
-            <div class="task working-on">
-                <div class="task-color"></div>
-                <h2>title</h2>
-                <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
-                    quae?</p>
-                <p>@sergio_Sanchez</p>
-                <p class="p-hora">10:10</p>
+            <div class="container-tasks">
+
+                <article class="task working-on">
+                    <div class="task-color"></div>
+                    <h2>title</h2>
+                    <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Velit,
+                        quae?</p>
+                    <p>@sergio_Sanchez</p>
+                    <p class="p-hora">10:10</p>
+                </article>
+
+                <article class="task working-on">
+                    <div class="task-color"></div>
+                    <h2>title</h2>
+                    <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Velit,
+                        quae?</p>
+                    <p>@sergio_Sanchez</p>
+                    <p class="p-hora">10:10</p>
+                </article>
+
             </div>
 
-        </div>
-        <div class="tablero">
+        </section>
+        <section class="tablero">
             <h1>Done 🏆</h1>
-            <div class="task done">
-                <div class="task-color"></div>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grip-vertical" viewBox="0 0 16 16">
+            <div class="container-tasks">
+
+                <article class="task done">
+                    <div class="task-color"></div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grip-vertical" viewBox="0 0 16 16">
                     <path d="M7 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-3 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                   </svg> -->
-                <h2>title</h2>
-                <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
-                    quae?</p>
-                <p>@sergio_Sanchez</p>
-                <p class="p-hora">10:10</p>
+                    <h2>title</h2>
+                    <p class="p-descripcion">description Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Velit,
+                        quae?</p>
+                    <p>@sergio_Sanchez</p>
+                    <p class="p-hora">10:10</p>
+                </article>
+
             </div>
-        </div>
+        </section>
     </main>
 
 
@@ -95,7 +112,15 @@
 
     </div>
 
-    <script src="script.js"></script>
+
+    <!-- Recursos externos -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta-8/lib/sortable.js"></script>
+
+    <!-- REcursos locales -->
+    <script src="js/helpers/Modal.js"></script>
 
 </body>
 
