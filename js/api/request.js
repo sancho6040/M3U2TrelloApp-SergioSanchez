@@ -1,15 +1,18 @@
-const API_URL = 'https://my-json-server.typicode.com/sancho6040/M3U2TrelloApp-SergioSanchez';
+const API_URL = "https://my-json-server.typicode.com/sancho6040/M3U2TrelloApp-SergioSanchez"
 
 axios.get(`${API_URL}/tasks`)
-.then((res) => console.log(res.data))
-.cath((error) => console.error(error))
+.then((res) => {
+    console.log(res.data);
+    showAllTasks(res.data)
+})
+.catch((error) => console.error("myError =>", error))
 
-const showAllTasks = data =>{
+const showAllTasks = (data) =>{
     data.map((task) => createTask(task))
 }
 
 const createTask = (Task) => {
-
+    console.log(`adding task ${Task.title}`);
     let newTask = document.createElement("article");
     newTask.classList.add("task");
 
@@ -27,25 +30,25 @@ const createTask = (Task) => {
 
     let taskDate = document.createElement("p");
     taskDate.classList.add("task-date");
-    taskDate.innerHTML = `<span> plazo: </span> ${dateFormat(taskDeadline)}`;
+    taskDate.innerHTML = `<span> plazo: </span> ${dateFormat(Task.Deadline)}`;
 
     newTask.appendChild(taskTitle);
     newTask.appendChild(taskResponsible);
     newTask.appendChild(taskDetails);
     newTask.appendChild(taskDate);
 
-    let columnToDo = document.querySelector("#to-do--container");
-    let columnWorkingOn = document.querySelector("#working-on--container");
-    let columnDone = document.querySelector("#done--container");
+    let columnToDo = document.querySelector("#to-do-container");
+    let columnWorkingOn = document.querySelector("#working-on-container");
+    let columnDone = document.querySelector("#done-container");
 
 
-    if(task.state === "to-do"){
+    if(Task.state === "to-do"){
         columnToDo.appendChild(newTask);
     }
-    if(task.state === "working-on"){
+    if(Task.state === "working-on"){
         columnWorkingOn.appendChild(newTask);
     }
-    if(task.state === "done"){
+    if(Task.state === "done"){
         columnDone.appendChild(newTask);
     }
 };
