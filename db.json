@@ -22,7 +22,7 @@
             "id": 3,
             "title": "Titulo1",
             "person": "Sergio",
-            "state": "working-on",
+            "state": "done",
             "details": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, explicabo!",
             "deadline": "1659326962",
             "created": "1659326962"

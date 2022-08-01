@@ -15,6 +15,7 @@ const createTask = (Task) => {
     console.log(`adding task ${Task.title}`);
     let newTask = document.createElement("article");
     newTask.classList.add("task");
+    newTask.classList.add(`${Task.state}`);
 
     let taskTitle = document.createElement("h2");
     taskTitle.classList.add("task-title");
@@ -30,7 +31,7 @@ const createTask = (Task) => {
 
     let taskDate = document.createElement("p");
     taskDate.classList.add("task-date");
-    taskDate.innerHTML = `<span> plazo: </span> ${dateFormat(Task.Deadline)}`;
+    taskDate.innerHTML = `<span> plazo: </span> ${dateFormat(Task.deadline)}`;
 
     newTask.appendChild(taskTitle);
     newTask.appendChild(taskResponsible);

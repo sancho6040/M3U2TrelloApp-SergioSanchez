@@ -69,6 +69,10 @@ main {
     gap: 10px;
 }
 
+.tablero h1 {
+    margin: 0 0 1vw 0;
+}
+
 .container-tasks {
     display: flex;
     flex-direction: column;
@@ -76,9 +80,6 @@ main {
     gap: 10px; 
 }
 
-.tablero h1 {
-    margin: 0 0 1vw 0;
-}
 
 @media screen and (max-width: 600px) {
     main {
@@ -104,11 +105,14 @@ main {
 }
 
 .task-color {
-    height: 5px;
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    width: 103%;
     background-color: rgb(0, 153, 255);
 }
 
-.p-descripcion {
+.task-details {
     text-align: justify;
 }
 

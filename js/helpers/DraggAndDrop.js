@@ -1,4 +1,4 @@
 const sort = new Sortable.default(
-    document.querySelectorAll('.tablero'),
-    {draggable: 'article'}
+    document.querySelectorAll('.container-tasks'),
+    {draggable: 'article'} 
 );
