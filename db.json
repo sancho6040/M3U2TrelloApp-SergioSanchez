@@ -5,8 +5,18 @@
             "title": "Titulo 1",
             "person": "Sergio",
             "state": "to-do",
-            "deadline": 165115,
-            "created": 165115
+            "details": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, explicabo!",
+            "deadline": 1659326962,
+            "created": 1659326962
+        },
+        {
+            "id": 2,
+            "title": "Titulo 1",
+            "person": "Sergio",
+            "state": "working-on",
+            "details": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, explicabo!",
+            "deadline": 1659326962,
+            "created": 1659326962
         }
     ]
 }
