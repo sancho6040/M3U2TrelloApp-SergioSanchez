@@ -31,7 +31,8 @@ const createTask = (Task) => {
 
     let taskDate = document.createElement("p");
     taskDate.classList.add("task-date");
-    taskDate.innerHTML = `<span> plazo: </span> ${dateFormat(Task.deadline)}`;
+    taskDate.innerHTML = `<span> plazo: </span> ${Task.deadline}`;
+    // taskDate.innerHTML = `<span> plazo: </span> ${dateFormat(Task.deadline)}`;
 
     newTask.appendChild(taskTitle);
     newTask.appendChild(taskResponsible);

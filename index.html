@@ -32,17 +32,7 @@
 
         <section class="tablero">
             <h1>To do 🎯</h1>
-            <div id="to-do-container" class="container-tasks">
-
-                <article class="task to-do">
-                    <h2 class="task-title">title</h2>
-                    <p class="task-details">description Lorem ipsum dolor sit, amet consectetur adipisicing elit.Velit,quae?</p>
-                    <p class="task-responsible">@sergio_Sanchez</p>
-                    <p class="task-date">10:10</p>
-                    <div class="task-color"></div>
-                </article>
-
-            </div>
+            <div id="to-do-container" class="container-tasks"></div>
         </section>
 
         <section class="tablero">
@@ -66,11 +56,11 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h1>Añadir tarea</h1>
-            <form action="">
-                <input type="text" placeholder="Titulo">
-                <input type="text" placeholder="Descripcion">
-                <input type="text" placeholder="Responsable">
-                <input type="date">
+            <form id="TaskForm" action="">
+                <input type="text" name="titleTask" placeholder="Titulo" required>
+                <input type="text" name="detailsTask" placeholder="Descripcion">
+                <input type="text" name="responsibleTask" placeholder="Responsable" required>
+                <input type="date" name="deadline">
                 <button>crear</button>
             </form>
         </div>
@@ -89,6 +79,8 @@
     <script src="js/helpers/Modal.js"></script>
     <script src="js/helpers/dates.js"></script>
     <script src="js/helpers/DraggAndDrop.js"></script>
+    <script src="js/helpers/newTask.js"></script>
+    <script src="js/helpers/gesturesHammer.js"></script>
     
 
 
